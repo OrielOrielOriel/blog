@@ -317,8 +317,8 @@ This tells me what subdirectory to navigate to to access level 6.
 This level directly provides me with access as a particular user. They hint that this user has a policy named "SecurityAudit" attached to it, which means I'll probably be able to use a loose permission on it to perform some sort of privilege escalation or enumeration into the next level.
 
 ```text
-Access key ID: AKIAJFQ6E7BY57Q3OBGA  
-Secret: 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
+Access key ID: AKIA<!--SNIPPED-->GA  
+Secret: S2Ipy<!--SNIPPED-->dZ4ps+u
 ```
 
 I configure myself as that user then run `aws --profile flaws6 iam list-attached-user-policies --user-name Level6` to find the ARN of the sus policy.
